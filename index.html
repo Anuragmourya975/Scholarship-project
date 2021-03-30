@@ -197,15 +197,7 @@
 </div> -->
 
 <!-- Steps Progress and Details - START -->
-<div class="container" style="margin-top: 100px; margin-bottom: 100px;">
-    <div class="row">
-        <div class="progress" id="progress1">
-            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-            </div>
-            <span class="progress-type">Overall Progress</span>
-            <span class="progress-completed">0%</span>
-        </div>
-    </div>
+
     <div class="row">
         <div class="row step">
           <a href="#step-1"><div id="div1" class="col-md-2 activestep" onclick="javascript: resetActive(event, 0, 'step-1');">
@@ -307,11 +299,25 @@
             </div>
 
             <button id="button2" type="button" class="btn btn-primary" onclick="javascript: resetActive(event, 80, 'step-5');" >Previous </button>
-            <button id="button2" type="button" class="btn btn-success" onclick="javascript: resetActive(event, 100, 'step-6');" >Submit</button>
+            <button id="button2" type="button" class="btn btn-success" onclick="document.location='#'" >Finish</button>
         </div>
 
         
     </div>
+   
+
+    <!-- progress-bar -->
+       <div class="container" style="margin-top: 100px; margin-bottom: 100px;">
+        <div class="row">
+            <div class="progress" id="progress1">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                </div>
+                <span class="progress-type">Overall Progress</span>
+                <span class="progress-completed">0%</span>
+            </div>
+        </div>
+
+
 <!-- Popup on page load -->
     <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
