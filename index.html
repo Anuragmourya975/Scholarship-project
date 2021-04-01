@@ -27,11 +27,11 @@
         } */
           
         .modal .modal-content {
-            /* padding: 20px 20px 20px 20px; */
-            /* -webkit-animation-name: modal-animation; */
-            /* -webkit-animation-duration: 0.5s; */
+            padding: 20px 20px 20px 20px;
+            -webkit-animation-name: modal-animation;
+            -webkit-animation-duration: 0.1s;
             animation-name: modal-animation; 
-            animation-duration: 0.5s;
+            animation-duration: 0.1s;
         }
           
         @-webkit-keyframes modal-animation {
@@ -69,6 +69,7 @@
     background-color: #5cb85c;
     font-size: larger;
     border-color: #4cae4c;
+    margin: 30px;
 }
 
 .progress {
@@ -182,7 +183,9 @@
   }
 }
 
-        </style>
+
+
+</style>
 
 
 </head>
@@ -322,7 +325,7 @@
                 <div class="container" style="position: relative;
                 overflow: hidden;
                 width: 100%;
-                padding-top: 56.25%;"><iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSfyxAV5O0_mUlur4UFl6hVXGXMm1X57XUoBOF7iBKbc_SvQbw/viewform?embedded=true" width="640" height="1439" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+                padding-top: 56.25%;"><iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSfyxAV5O0_mUlur4UFl6hVXGXMm1X57XUoBOF7iBKbc_SvQbw/viewform?embedded=true" width="640" height="5000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
 
             <button  type="button" class="btn btn-primary" onclick="javascript: resetActive(event, 80, 'step-5');" >Previous </button>
             <button type="button" class="btn btn-success" onclick="document.location='#'" >Finish</button>
@@ -437,13 +440,14 @@
 });
 
 
+
 </script>
 
 <!-- Steps Progress and Details - END -->
 <!-- progressbar -->
 <div class="row">
     <div class="progress" id="progress1">
-        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
         </div>
         <span class="progress-type">Overall Progress</span>
         <span class="progress-completed">0%</span>
@@ -453,4 +457,5 @@
 </div>
 
 </body>
+
 </html>
