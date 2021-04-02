@@ -310,7 +310,6 @@
   transition-delay: 0s;
   color: #286090;
   opacity: 0.6;
-  
 }
 .todo__state:checked ~ .todo__icon .todo__box {
   stroke-dashoffset: 56.1053;
@@ -369,11 +368,6 @@ label {
     margin-bottom: 5px;
     font-weight: 100;
 }
-.todo__text {
-    color: #135156;
-    transition: all 0.4s linear 0.4s;
-    text-align: left;
-}
 </style>
 
 
@@ -400,7 +394,7 @@ label {
               <!-- <li class="active"><a href="#">Home</a></li>
               <li><a href="#">Page 1</a></li> -->
               <li ><a href="#" ><span class="fas fa-file-signature" ></span>  Apply For Documents</a></li>
-              <li ><a href="#" style="word-spacing: 2px;"><span class="fas fa-file-contract" ></span>   Apply For Notary</a></li>
+              <li ><a href="#" ><span class="fas fa-file-contract" ></span>   Apply For Notary</a></li>
             </ul>
           </div>
         </div>
@@ -485,23 +479,9 @@ label {
                         <use xlink:href="#todo__circle" class="todo__circle"></use>
                       </svg>
                   
-                      <div class="todo__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem architecto eos sequi consectetur non, cum, iure sunt eaque eius esse eum delectus. Ad dolor minus sequi consequatur animi in aut? </div>
+                      <div class="todo__text"> Do a very important task   </div>
                       
                     </label>
-                    <label class="todo">
-                  
-                        <input class="todo__state" type="checkbox" />
-                    
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 25" class="todo__icon">
-                          <use xlink:href="#todo__line" class="todo__line"></use>
-                          <use xlink:href="#todo__box" class="todo__box"></use>
-                          <use xlink:href="#todo__check" class="todo__check"></use>
-                          <use xlink:href="#todo__circle" class="todo__circle"></use>
-                        </svg>
-                    
-                        <div class="todo__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sequi consectetur, quibusdam, quas quae harum voluptates tempore ad ea temporibus provident, nihil nesciunt commodi similique officia voluptatibus aperiam autem eum.</div>
-                        
-                      </label>
                   
                     <label class="todo">
                   
@@ -514,7 +494,7 @@ label {
                         <use xlink:href="#todo__circle" class="todo__circle"></use>
                       </svg>
                   
-                      <div class="todo__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit quo aliquam consequuntur velit mollitia inventore, amet, assumenda eum quidem excepturi, dolorum repellendus porro illum fugiat. Cum magnam error laboriosam consectetur.</div>
+                      <div class="todo__text">Another important task</div>
                       
                     </label>
                   
@@ -528,7 +508,7 @@ label {
                         <use xlink:href="#todo__circle" class="todo__circle"></use>
                       </svg>
                       
-                      <div class="todo__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aperiam explicabo vitae cum optio. Saepe soluta in, dolorem sed, sint, quis esse a natus officiis aliquid ipsa voluptate quasi debitis!</div>
+                      <div class="todo__text">Not so important task</div>
                     </label>
                   </div>
 
