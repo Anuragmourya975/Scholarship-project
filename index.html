@@ -336,30 +336,31 @@ label {
     
     <div class="row">
         <div class="row step">
-            <div id="div1" class="col-md-2 activestep" onclick="javascript: resetActive(event, 0, 'step-1');">
-                <span class="fa fa-cloud-download"></span>
-                <p>Download Application</p>
-            </div>
-            <div class="col-md-2 " onclick="javascript: resetActive(event, 20, 'step-2');">
-                <span class="fa fa-pencil"></span>
-                <p>Fill out</p>
-            </div>
-            <div class="col-md-2" onclick="javascript: resetActive(event, 40, 'step-3');">
-                <span class="fa fa-refresh"></span>
-                <p>Check</p>
-            </div>
-            <div class="col-md-2" onclick="javascript: resetActive(event, 60, 'step-4');">
-                <span class="fa fa-dollar"></span>
-                <p>Pay Fee</p>
-            </div>
-            <div class="col-md-2" onclick="javascript: resetActive(event, 80, 'step-5');">
-                <span class="fa fa-cloud-upload"></span>
-                <p>Submit Application</p>
-            </div>
-            <div id="last" class="col-md-2" onclick="javascript: resetActive(event, 100, 'step-6');">
-                <span class="fa fa-star"></span>
-                <p>Send Feedback</p>
-            </div>
+          <a href="#step-1"><div id="div1" class="col-md-2 activestep" onclick="javascript: resetActive(event, 0, 'step-1');">
+            <span class="fa fa-cloud-download"></span>
+            <p>Download Application</p>
+        </div></a>  
+            
+            <a href="#step-2"><div class="col-md-2 " onclick="javascript: resetActive(event, 20, 'step-2');">
+              <span class="fa fa-pencil"></span>
+              <p>Fill out</p>
+          </div></a>
+            <a href="#step-3"><div class="col-md-2" onclick="javascript: resetActive(event, 40, 'step-3');">
+              <span class="fa fa-refresh"></span>
+              <p>Check</p>
+          </div></a>
+            <a href="#step-4"><div class="col-md-2" onclick="javascript: resetActive(event, 60, 'step-4');">
+              <span class="fa fa-dollar"></span>
+              <p>Pay Fee</p>
+          </div></a>
+            <a href="#step-5"><div class="col-md-2" onclick="javascript: resetActive(event, 80, 'step-5');">
+              <span class="fa fa-cloud-upload"></span>
+              <p>Submit Application</p>
+          </div></a>
+            <a href="#step-6"><div id="last" class="col-md-2" onclick="javascript: resetActive(event, 100, 'step-6');">
+              <span class="fa fa-star"></span>
+              <p>Send Feedback</p>
+          </div></a>
         </div>
     </div>
     <div class="row setup-content step activeStepInfo" id="step-1">
@@ -451,7 +452,7 @@ label {
             </div>
         </div>
         <button id="button1" type="button" class="btn btn-primary" onclick="document.location='index.html'" style="word-spacing: 4px;" > <i class="fas fa-home"></i>  Home</button>
-        <button id="myBtn" type="button" class="btn btn-primary" onclick="javascript: resetActive(event, 20, 'step-2'); myFunction();" style="word-spacing: 4px;" disabled> Next <i class="fas fa-chevron-right"></i></button>
+        <button id="myBtn" type="button" class="btn btn-primary" onclick="javascript: resetActive(event, 20, 'step-2'); " style="word-spacing: 4px;" disabled> Next <i class="fas fa-chevron-right"></i></button>
     </div>
     
 </form>  
@@ -522,10 +523,10 @@ label {
             <button type="button" class="btn btn-success" id="Finish" style="word-spacing: 4px;">Finish <i class="fas fa-check-circle" ></i> </button>
         
     </div>
-<!-- Popup on page load
+<!-- Popup on page load -->
     <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
-          Modal content
+          <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -551,7 +552,7 @@ label {
         </div>
       </div>
       
-</div> -->
+</div>
 </div>
 
 
@@ -597,9 +598,9 @@ label {
     }
 
 
-    $(window).load(function(){        
-   $('#myModal').modal('show');
-    }); 
+  //   $(window).load(function(){        
+  //  $('#myModal').modal('show');
+  //   }); 
 
     // option menu clickable
     // var urlMenu = document.getElementById('sel1');
