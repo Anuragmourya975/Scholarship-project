@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <title>Scholarship Form Filling Process </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Scholarship Form Filling Process </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- sweetalert -->
-    <link href='https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:400,300,700' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css'>
+  <!-- sweetalert -->
+  <link href='https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css'>
 
-    
-    <link rel="stylesheet" type="text/css" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet"  href="PostM.html" />
-    <link rel="stylesheet"  href="Minority.html" />
 
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-    
-    
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="PostM.html" />
+  <link rel="stylesheet" href="Minority.html" />
 
-    <style>/* Styling modal */
-        /* .modal:before {
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
+  <style>
+    /* Styling modal */
+    /* .modal:before {
             content: '';
             display: inline-block;
             height: 100%;
@@ -33,569 +37,650 @@
             display: inline-block;
             vertical-align: middle;
         } */
-          
-        .modal .modal-content {
-            padding: 20px 20px 20px 20px;
-            -webkit-animation-name: modal-animation;
-            -webkit-animation-duration: 0.1s;
-            animation-name: modal-animation; 
-            animation-duration: 0.1s;
-        }
-          
-        @-webkit-keyframes modal-animation {
-            from {
-                top: -100px;
-                opacity: 0;
-            }
-            to {
-                top: 0px;
-                opacity: 1;
-            }
-        }
-          
-        @keyframes modal-animation {
-            from {
-                top: -100px;
-                opacity: 0;
-            }
-            to {
-                top: 0px;
-                opacity: 1;
-            }
-        }
 
-        .btn-primary {
-    color: #fff;
-    background-color: #337ab7;
-    border-color: #2e6da4;
-    margin: 25px;
-    font-size: medium;
-}
+    .modal .modal-content {
+      padding: 20px 20px 20px 20px;
+      -webkit-animation-name: modal-animation;
+      -webkit-animation-duration: 0.1s;
+      animation-name: modal-animation;
+      animation-duration: 0.1s;
+    }
 
-.btn-success {
-    color: #fff;
-    background-color: #5cb85c;
-    font-size: medium;
-    border-color: #4cae4c;
-    margin: 25px;
-}
+    @-webkit-keyframes modal-animation {
+      from {
+        top: -100px;
+        opacity: 0;
+      }
 
-.progress {
-    position: relative;
-    margin-top: -50px;
-    height: 25px;
-}
+      to {
+        top: 0px;
+        opacity: 1;
+      }
+    }
 
-.hiddenStepInfo {
-    display: none;
-}
+    @keyframes modal-animation {
+      from {
+        top: -100px;
+        opacity: 0;
+      }
 
-.activeStepInfo {
-    display: block !important;
-}
+      to {
+        top: 0px;
+        opacity: 1;
+      }
+    }
 
-.underline {
-    text-decoration: underline;
-}
+    .btn-primary {
+      color: #fff;
+      background-color: #337ab7;
+      border-color: #2e6da4;
+      margin: 25px;
+      font-size: medium;
+    }
 
-.step {
-    margin-top: 27px;
-}
+    .btn-success {
+      color: #fff;
+      background-color: #5cb85c;
+      font-size: medium;
+      border-color: #4cae4c;
+      margin: 25px;
+    }
 
-.progress {
-    position: relative;
-    height: 25px;
-    
-}
+    .progress {
+      position: relative;
+      margin-top: -50px;
+      height: 25px;
+    }
 
-.progress > .progress-type {
-    position: absolute;
-    left: 0px;
-    font-weight: 800;
-    padding: 3px 30px 2px 10px;
-    color: rgb(255, 255, 255);
-    background-color: rgba(25, 25, 25, 0.2);
-}
+    .hiddenStepInfo {
+      display: none;
+    }
 
-.progress > .progress-completed {
-    position: absolute;
-    right: 0px;
-    font-weight: 800;
-    padding: 3px 10px 2px;
-}
+    .activeStepInfo {
+      display: block !important;
+    }
 
-.step {
-    text-align: center;
-}
+    .underline {
+      text-decoration: underline;
+    }
 
-.step .col-md-2 {
-    background-color: #fff;
-    border: 1px solid #C0C0C0;
-    border-right: none;
-}
+    .step {
+      margin-top: 27px;
+    }
 
-.step .col-md-2:last-child {
-    border: 1px solid #C0C0C0;
-}
+    .progress {
+      position: relative;
+      height: 25px;
 
-.step .col-md-2:first-child {
-    border-radius: 5px 0 0 5px;
-}
+    }
 
-.step .col-md-2:last-child {
-    border-radius: 0 5px 5px 0;
-}
+    .progress>.progress-type {
+      position: absolute;
+      left: 0px;
+      font-weight: 800;
+      padding: 3px 30px 2px 10px;
+      color: rgb(255, 255, 255);
+      background-color: rgba(25, 25, 25, 0.2);
+    }
 
-.step .col-md-2:hover {
-    color: #F58723;
-    cursor: pointer;
-}
+    .progress>.progress-completed {
+      position: absolute;
+      right: 0px;
+      font-weight: 800;
+      padding: 3px 10px 2px;
+    }
 
-.step .activestep {
-    color: #F58723;
-    height: 100px;
-    margin-top: -7px;
-    padding-top: 7px;
-    border-left: 6px solid #5CB85C !important;
-    border-right: 6px solid #5CB85C !important;
-    border-top: 3px solid #5CB85C !important;
-    border-bottom: 3px solid #5CB85C !important;
-    vertical-align: central;
-}
+    .step {
+      text-align: center;
+    }
 
-.step .fa {
-    padding-top: 15px;
-    font-size: 40px;
-}
+    .step .col-md-2 {
+      background-color: #fff;
+      border: 1px solid #C0C0C0;
+      border-right: none;
+    }
 
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
+    .step .col-md-2:last-child {
+      border: 1px solid #C0C0C0;
+    }
 
-.progress {
-    position: relative;
-    height: 25px;
-    margin-left: 30px;
-    /* margin-right: 5px; */
-}
+    .step .col-md-2:first-child {
+      border-radius: 5px 0 0 5px;
+    }
 
-@media only screen and (max-width: 768px) {
-  .progress {
-    margin-right: 25px;
-  }
-}
+    .step .col-md-2:last-child {
+      border-radius: 0 5px 5px 0;
+    }
 
-@media only screen and (max-width: 1180px) {
-  .mylivechat_buttonround {
-    display: none;
-  }
-}
+    .step .col-md-2:hover {
+      color: #F58723;
+      cursor: pointer;
+    }
 
-/* animated checkbox */
+    .step .activestep {
+      color: #F58723;
+      height: 100px;
+      margin-top: -7px;
+      padding-top: 7px;
+      border-left: 6px solid #5CB85C !important;
+      border-right: 6px solid #5CB85C !important;
+      border-top: 3px solid #5CB85C !important;
+      border-bottom: 3px solid #5CB85C !important;
+      vertical-align: central;
+    }
 
-.label-cbx {
-  user-select: none;
-  cursor: pointer;
-  margin-bottom: 0;
-}
-.label-cbx input:checked + .checkbox {
-  border-color: #337ab7
-}
-.label-cbx input:checked + .checkbox svg path {
-  fill: #337ab7;
-}
-.label-cbx input:checked + .checkbox svg polyline {
-  stroke-dashoffset: 0;
-}
-.label-cbx:hover .checkbox svg path {
-  stroke-dashoffset: 0;
-}
-.label-cbx .checkbox {
-  position: relative;
-  top: 2px;
-  float: left;
-  margin-right: 8px;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #C8CCD4;
-  border-radius: 3px;
-}
-.label-cbx .checkbox svg {
-  position: absolute;
-  top: -2px;
-  left: -2px;
-}
-.label-cbx .checkbox svg path {
-  fill: none;
-  stroke: #337ab7;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-dasharray: 71px;
-  stroke-dashoffset: 71px;
-  transition: all 0.6s ease;
-}
-.label-cbx .checkbox svg polyline {
-  fill: none;
-  stroke: #FFF;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-dasharray: 18px;
-  stroke-dashoffset: 18px;
-  transition: all 0.3s ease;
-}
-.label-cbx > span {
-  pointer-events: none;
-  vertical-align: middle;
-}
+    .step .fa {
+      padding-top: 15px;
+      font-size: 40px;
+    }
 
-.cntr {
-  position: absolute;
-  top: 45%;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
+    .responsive-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
 
-.invisible {
-  position: absolute;
-  z-index: -1;
-  width: 0;
-  height: 0;
-  opacity: 0;
-}
-body {
-  font-family: Avenir;
-  font-size: 16px;
-}
-label {
-    display: inline-block;
-    max-width: 100%;
-    margin-bottom: 5px;
-    font-weight: 500;
-    font-size: 17px;
-}
+    .progress {
+      position: relative;
+      height: 25px;
+      margin-left: 30px;
+      /* margin-right: 5px; */
+    }
 
-.disabled{
-    cursor: not-allowed;
-    pointer-events:none;
-    opacity: .65;
+    @media only screen and (max-width: 768px) {
+      .progress {
+        margin-right: 25px;
+      }
+    }
+
+    @media only screen and (max-width: 1180px) {
+      .mylivechat_buttonround {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 1270px) {
+      div.row {
+        display: none;
+      }
+    }
+
+    /* animated checkbox */
+
+    .label-cbx {
+      user-select: none;
+      cursor: pointer;
+      margin-bottom: 0;
+    }
+
+    .label-cbx input:checked+.checkbox {
+      border-color: #337ab7
+    }
+
+    .label-cbx input:checked+.checkbox svg path {
+      fill: #337ab7;
+    }
+
+    .label-cbx input:checked+.checkbox svg polyline {
+      stroke-dashoffset: 0;
+    }
+
+    .label-cbx:hover .checkbox svg path {
+      stroke-dashoffset: 0;
+    }
+
+    .label-cbx .checkbox {
+      position: relative;
+      top: 2px;
+      float: left;
+      margin-right: 8px;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #C8CCD4;
+      border-radius: 3px;
+    }
+
+    .label-cbx .checkbox svg {
+      position: absolute;
+      top: -2px;
+      left: -2px;
+    }
+
+    .label-cbx .checkbox svg path {
+      fill: none;
+      stroke: #337ab7;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 71px;
+      stroke-dashoffset: 71px;
+      transition: all 0.6s ease;
+    }
+
+    .label-cbx .checkbox svg polyline {
+      fill: none;
+      stroke: #FFF;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 18px;
+      stroke-dashoffset: 18px;
+      transition: all 0.3s ease;
+    }
+
+    .label-cbx>span {
+      pointer-events: none;
+      vertical-align: middle;
+    }
+
+    .cntr {
+      position: absolute;
+      top: 45%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .invisible {
+      position: absolute;
+      z-index: -1;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+
+    body {
+      font-family: Avenir;
+      font-size: 16px;
+    }
+
+    label {
+      display: inline-block;
+      max-width: 100%;
+      margin-bottom: 5px;
+      font-weight: 500;
+      font-size: 17px;
     }
 
     .disabled {
-    border: 1px solid #999;
-    background-color: #ddd;
-}
-</style>
+      cursor: not-allowed;
+      pointer-events: none;
+      opacity: .65;
+    }
+
+    .disabled {
+      border: 1px solid #999;
+      background-color: #ddd;
+    }
+  </style>
 
 
 </head>
+
 <body>
 
-    <nav class="navbar navbar-default ">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">WebSiteName</a>
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <!-- <ul class="nav navbar-nav">
+  <nav class="navbar navbar-default ">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <!-- <ul class="nav navbar-nav">
               
             </ul> -->
-            <ul class="nav navbar-nav navbar-right">
-              <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <ul class="nav navbar-nav navbar-right">
+          <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
               <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
-              <!-- <li class="active"><a href="#">Home</a></li>
+          <!-- <li class="active"><a href="#">Home</a></li>
               <li><a href="#">Page 1</a></li> -->
-              <li ><a href="#" ><span class="fas fa-file-signature" ></span>  Apply For Documents</a></li>
-              <li ><a href="#" ><span class="fas fa-file-contract" ></span>   Apply For Notary</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+          <li><a href="#"><span class="fas fa-file-signature"></span> Apply For Documents</a></li>
+          <li><a href="#"><span class="fas fa-file-contract"></span> Apply For Notary</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-     
 
-<div class="container"><!-- <div class="page-header">
+
+  <div class="container">
+    <!-- <div class="page-header">
     <h1 style="text-align: center;">Scholarship Form Filling Process <small></small></h1>
 </div> -->
 
-<!-- Steps Progress and Details - START -->
-<div class="container" style="margin-top: 0px; margin-bottom: 50px;">
-    
-    <div class="row">
+    <!-- Steps Progress and Details - START -->
+    <div class="container" style="margin-top: 0px; margin-bottom: 50px;">
+
+      <div class="row">
         <div class="row step">
-          <a href="#step-1"><div id="div1" class="col-md-2 activestep" onclick="javascript: resetActive(event, 0, 'step-1');">
-            <span class="fa fa-cloud-download"></span>
-            <p>Download Application</p>
-        </div></a>  
-            
-        <a href="#step-2"><div class="col-md-2" onclick="javascript: resetActive(event, 20, 'step-2');">
-          <span class="fa fa-file"></span>
-          <p>Check</p>
-      </div></a>
-            <a href="#step-3"><div class="col-md-2" onclick="javascript: resetActive(event, 40, 'step-3');">
+          <a href="#step-1">
+            <div id="div1" class="col-md-2 activestep" onclick="javascript: resetActive(event, 0, 'step-1');">
+              <span class="fa fa-cloud-download"></span>
+              <p>Download Application</p>
+            </div>
+          </a>
+
+          <a href="#step-2">
+            <div class="col-md-2" onclick="javascript: resetActive(event, 20, 'step-2');">
+              <span class="fa fa-file"></span>
+              <p>Check</p>
+            </div>
+          </a>
+          <a href="#step-3">
+            <div class="col-md-2" onclick="javascript: resetActive(event, 40, 'step-3');">
               <span class="fa fa-refresh"></span>
               <p>Check</p>
-          </div></a>
-            <a href="#step-4"><div class="col-md-2" onclick="javascript: resetActive(event, 60, 'step-4');">
+            </div>
+          </a>
+          <a href="#step-4">
+            <div class="col-md-2" onclick="javascript: resetActive(event, 60, 'step-4');">
               <span class="fa fa-dollar"></span>
               <p>Pay Fee</p>
-          </div></a>
-            <a href="#step-5"><div class="col-md-2" onclick="javascript: resetActive(event, 80, 'step-5');">
+            </div>
+          </a>
+          <a href="#step-5">
+            <div class="col-md-2" onclick="javascript: resetActive(event, 80, 'step-5');">
               <span class="fa fa-cloud-upload"></span>
               <p>Submit Application</p>
-          </div></a>
-            <a href="#step-6"><div id="last" class="col-md-2" onclick="javascript: resetActive(event, 100, 'step-6');">
+            </div>
+          </a>
+          <a href="#step-6">
+            <div id="last" class="col-md-2" onclick="javascript: resetActive(event, 100, 'step-6');">
               <span class="fa fa-star"></span>
               <p>Send Feedback</p>
-          </div></a>
+            </div>
+          </a>
         </div>
-    </div>
-    <div class="row setup-content step activeStepInfo" id="step-1">
+      </div>
+      <div class="row setup-content step activeStepInfo" id="step-1">
         <div class="col-xs-12">
-            <div class="col-md-12 well text-center">
-                <h1>STEP 1</h1>
-                <h3 class="underline">Instructions</h3>
-                Download the application form from our repository.
-                This may require logging in.
+          <div class="col-md-12 well text-center">
+            <h1>STEP 1</h1>
+            <h3 class="underline">Instructions</h3>
+            Download the application form from our repository.
+            This may require logging in.
 
-                <br>
-                <br>
+            <br>
 
-                <!-- animated checkbox -->
-             <form onsubmit="return false"> 
-    <label for="cbx" class="label-cbx" >
-        <input id="cbx" type="checkbox" class="compulsory"  style="opacity: 0;" required >
-        <div class="checkbox">
-          <svg width="20px" height="20px" viewBox="0 0 20 20">
-            <path d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"></path> 
-            <polyline points="4 11 8 15 16 6"></polyline>
-          </svg>
-        </div>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate porro repudiandae, repellat minima molestias obcaecati consectetur, laborum a doloremque vitae ipsum inventore delectus illo nemo qui accusantium, maxime harum.</span>
-      </label>
-      <br>
-      <br>
-      <label for="cbx1" class="label-cbx">
-        <input id="cbx1" type="checkbox" class="compulsory" style="opacity: 0;" required >
-        <div class="checkbox">
-          <svg width="20px" height="20px" viewBox="0 0 20 20">
-            <path d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"></path>
-            <polyline points="4 11 8 15 16 6"></polyline>
-          </svg>
-        </div>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate porro repudiandae, repellat minima molestias obcaecati consectetur, laborum a doloremque vitae ipsum inventore delectus illo nemo qui accusantium, maxime harum. hrllo</span>
-      </label>
-<br>
-<br>
-      <label for="cbx3" class="label-cbx">
-        <input id="cbx3" type="checkbox" class="compulsory" style="opacity: 0;" required >
-        <div class="checkbox">
-          <svg width="20px" height="20px" viewBox="0 0 20 20">
-            <path d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"></path>
-            <polyline points="4 11 8 15 16 6"></polyline>
-          </svg>
-        </div>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate porro repudiandae, repellat minima molestias obcaecati consectetur, laborum a doloremque vitae ipsum inventore delectus illo nemo qui accusantium, maxime harum.</span>
-      </label>
-      <br>
-      <br>
-      <label for="cbx4" class="label-cbx">
-        <input id="cbx4" type="checkbox" class="compulsory" style="opacity: 0;" required >
-        <div class="checkbox">
-          <svg width="20px" height="20px" viewBox="0 0 20 20">
-            <path d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"></path>
-            <polyline points="4 11 8 15 16 6"></polyline>
-          </svg>
-        </div>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate porro repudiandae, repellat minima molestias obcaecati consectetur, laborum a doloremque vitae ipsum inventore delectus illo nemo qui accusantium, maxime harum.</span>
-      </label>
-      <br>
-      <br>
-      <label for="cbx5" class="label-cbx">
-        <input id="cbx5" type="checkbox" class="compulsory" style="opacity: 0;" required >
-        <div class="checkbox">
-          <svg width="20px" height="20px" viewBox="0 0 20 20">
-            <path d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"></path>
-            <polyline points="4 11 8 15 16 6"></polyline>
-          </svg>
-        </div>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate porro repudiandae, repellat minima molestias obcaecati consectetur, laborum a doloremque vitae ipsum inventore delectus illo nemo qui accusantium, maxime harum.</span>
-      </label>
-      <br>
-      <br>
-      <label for="cbx6" class="label-cbx">
-        <input id="cbx6" type="checkbox" class="compulsory" style="opacity: 0;" required >
-        <div class="checkbox">
-          <svg width="20px" height="20px" viewBox="0 0 20 20">
-            <path d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"></path>
-            <polyline points="4 11 8 15 16 6"></polyline>
-          </svg>
-        </div>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate porro repudiandae, repellat minima molestias obcaecati consectetur, laborum a doloremque vitae ipsum inventore delectus illo nemo qui accusantium, maxime harum.</span>
-      </label>
-      <br>
-<br>
-<button type="submit" id="continue" onclick="myFunction()" disabled>Mark as complete</button>
-            </div>
-        </div>
-        <button id="button1" type="button" class="btn btn-primary" onclick="document.location='index.html'" style="word-spacing: 4px;" > <i class="fas fa-home"></i>  Home</button>
-        <button id="myBtn" type="button" class="btn btn-primary" onclick="javascript: resetActive(event, 20, 'step-2'); " style="word-spacing: 4px;" disabled> Next <i class="fas fa-chevron-right"></i></button>
-    </div>
-    
-</form>  
-    <div class="row setup-content step hiddenStepInfo" id="step-2">
-        <div class="col-xs-12">
-            <div class="col-md-12 well text-center">
-                <h1>STEP 2</h1>
-                <h3 class="underline">Instructions</h3>
-                Fill out the application. 
-                Make sure to leave no empty fields. 
-            </div>
-        </div>
-        <button id="button2" type="button" class="btn btn-primary"onclick="javascript: resetActive(event, 0, 'step-1');"  style="word-spacing: 4px;"> <i class="fas fa-chevron-left"></i> Previous </button>
-        <button id="button2" type="button" class="btn btn-primary"onclick="javascript: resetActive(event, 40, 'step-3');"  style="word-spacing: 4px;">Next <i class="fas fa-chevron-right"></i> </button>
-    </div>
-    <div class="row setup-content step hiddenStepInfo" id="step-3">
-        <div class="col-xs-12">
-            <div class="col-md-12 well text-center">
-                <h1>STEP 3</h1>
-                <h3 class="underline">Instructions</h3>
-                Check to ensure that all data entered is valid. 
-            </div>
-        </div>
-        <button id="button2" type="button" class="btn btn-primary" onclick="javascript: resetActive(event, 20, 'step-2');"  style="word-spacing: 4px;"><i class="fas fa-chevron-left"></i> Previous </button>
-        <button id="button2" type="button" class="btn btn-primary" onclick="javascript: resetActive(event, 60, 'step-4');" style="word-spacing: 4px;">Next <i class="fas fa-chevron-right"></i> </button>
-    </div>
-    <div class="row setup-content step hiddenStepInfo" id="step-4">
-        <div class="col-xs-12">
-            <div class="col-md-12 well text-center">
-                <h1>STEP 4</h1>
-                <h3 class="underline">Instructions</h3>
-                Pay the application fee. 
-                This can be done either by entering your card details, or by using Paypal.
-            </div>
-        </div>
-        <button id="button2" type="button" class="btn btn-primary" onclick="javascript: resetActive(event, 40, 'step-3');" style="word-spacing: 4px;"> <i class="fas fa-chevron-left"></i> Previous </button>
-        <button id="button2" type="button" class="btn btn-primary" onclick="javascript: resetActive(event, 80, 'step-5');"  style="word-spacing: 4px;">Next <i class="fas fa-chevron-right"></i> </button>
-    </div>
-    <div class="row setup-content step hiddenStepInfo" id="step-5">
-        <div class="col-xs-12">
-            <div class="col-md-12 well text-center">
-                <h1>STEP 5</h1>
-                <h3 class="underline">Instructions</h3>
-                Upload the application. 
-                This may require a confirmation email.
-            </div>
-        </div>
-        <button id="button2" type="button" class="btn btn-primary" onclick="javascript: resetActive(event, 60, 'step-4');" style="word-spacing: 4px;"><i class="fas fa-chevron-left"></i> Previous </button>
-        <button id="button2" type="button" class="btn btn-primary" onclick="javascript: resetActive(event, 100, 'step-6');" style="word-spacing: 4px;">Next <i class="fas fa-chevron-right"></i> </button>
-    </div>
-    <div class="row setup-content step hiddenStepInfo" id="step-6">
-        <div class="col-xs-12">
-            <div class="col-md-12 well text-center">
-                <h1>STEP 6</h1>
-                <h3 class="underline">Instructions</h3>
-                <p>Send us feedback on the overall process. 
-                    This step is not obligatory.</p>
+            <br>
+
+            <!-- animated checkbox -->
+            <form onsubmit="return false">
+              <label for="cbx" class="label-cbx">
+                <input id="cbx" type="checkbox" class="compulsory" style="opacity: 0;" required>
+                <div class="checkbox">
+                  <svg width="20px" height="20px" viewBox="0 0 20 20">
+                    <path
+                      d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z">
+                    </path>
+                    <polyline points="4 11 8 15 16 6"></polyline>
+                  </svg>
                 </div>
-                
-                <div class="container" style="position: relative;
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate porro repudiandae,
+                  repellat minima molestias obcaecati consectetur, laborum a doloremque vitae ipsum inventore delectus
+                  illo nemo qui accusantium, maxime harum.</span>
+              </label>
+              <br>
+              <br>
+              <label for="cbx1" class="label-cbx">
+                <input id="cbx1" type="checkbox" class="compulsory" style="opacity: 0;" required>
+                <div class="checkbox">
+                  <svg width="20px" height="20px" viewBox="0 0 20 20">
+                    <path
+                      d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z">
+                    </path>
+                    <polyline points="4 11 8 15 16 6"></polyline>
+                  </svg>
+                </div>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate porro repudiandae,
+                  repellat minima molestias obcaecati consectetur, laborum a doloremque vitae ipsum inventore delectus
+                  illo nemo qui accusantium, maxime harum. hrllo</span>
+              </label>
+              <br>
+              <br>
+              <label for="cbx3" class="label-cbx">
+                <input id="cbx3" type="checkbox" class="compulsory" style="opacity: 0;" required>
+                <div class="checkbox">
+                  <svg width="20px" height="20px" viewBox="0 0 20 20">
+                    <path
+                      d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z">
+                    </path>
+                    <polyline points="4 11 8 15 16 6"></polyline>
+                  </svg>
+                </div>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate porro repudiandae,
+                  repellat minima molestias obcaecati consectetur, laborum a doloremque vitae ipsum inventore delectus
+                  illo nemo qui accusantium, maxime harum.</span>
+              </label>
+              <br>
+              <br>
+              <label for="cbx4" class="label-cbx">
+                <input id="cbx4" type="checkbox" class="compulsory" style="opacity: 0;" required>
+                <div class="checkbox">
+                  <svg width="20px" height="20px" viewBox="0 0 20 20">
+                    <path
+                      d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z">
+                    </path>
+                    <polyline points="4 11 8 15 16 6"></polyline>
+                  </svg>
+                </div>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate porro repudiandae,
+                  repellat minima molestias obcaecati consectetur, laborum a doloremque vitae ipsum inventore delectus
+                  illo nemo qui accusantium, maxime harum.</span>
+              </label>
+              <br>
+              <br>
+              <label for="cbx5" class="label-cbx">
+                <input id="cbx5" type="checkbox" class="compulsory" style="opacity: 0;" required>
+                <div class="checkbox">
+                  <svg width="20px" height="20px" viewBox="0 0 20 20">
+                    <path
+                      d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z">
+                    </path>
+                    <polyline points="4 11 8 15 16 6"></polyline>
+                  </svg>
+                </div>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate porro repudiandae,
+                  repellat minima molestias obcaecati consectetur, laborum a doloremque vitae ipsum inventore delectus
+                  illo nemo qui accusantium, maxime harum.</span>
+              </label>
+              <br>
+              <br>
+              <label for="cbx6" class="label-cbx">
+                <input id="cbx6" type="checkbox" class="compulsory" style="opacity: 0;" required>
+                <div class="checkbox">
+                  <svg width="20px" height="20px" viewBox="0 0 20 20">
+                    <path
+                      d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z">
+                    </path>
+                    <polyline points="4 11 8 15 16 6"></polyline>
+                  </svg>
+                </div>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate porro repudiandae,
+                  repellat minima molestias obcaecati consectetur, laborum a doloremque vitae ipsum inventore delectus
+                  illo nemo qui accusantium, maxime harum.</span>
+              </label>
+              <br>
+              <br>
+              <button type="submit" id="continue" onclick="myFunction()" disabled>Mark as complete</button>
+          </div>
+        </div>
+        <button id="button1" type="button" class="btn btn-primary" onclick="document.location='index.html'"
+          style="word-spacing: 4px;"> <i class="fas fa-home"></i> Home</button>
+        <button id="myBtn" type="button" class="btn btn-primary"
+          onclick="javascript: resetActive(event, 20, 'step-2'); " style="word-spacing: 4px;" disabled> Next <i
+            class="fas fa-chevron-right"></i></button>
+      </div>
+
+      </form>
+      <div class="row setup-content step hiddenStepInfo" id="step-2">
+        <div class="col-xs-12">
+          <div class="col-md-12 well text-center">
+            <h1>STEP 2</h1>
+            <h3 class="underline">Instructions</h3>
+            Fill out the application.
+            Make sure to leave no empty fields.
+          </div>
+        </div>
+        <button id="button2" type="button" class="btn btn-primary"
+          onclick="javascript: resetActive(event, 0, 'step-1');" style="word-spacing: 4px;"> <i
+            class="fas fa-chevron-left"></i> Previous </button>
+        <button id="button2" type="button" class="btn btn-primary"
+          onclick="javascript: resetActive(event, 40, 'step-3');" style="word-spacing: 4px;">Next <i
+            class="fas fa-chevron-right"></i> </button>
+      </div>
+      <div class="row setup-content step hiddenStepInfo" id="step-3">
+        <div class="col-xs-12">
+          <div class="col-md-12 well text-center">
+            <h1>STEP 3</h1>
+            <h3 class="underline">Instructions</h3>
+            Check to ensure that all data entered is valid.
+          </div>
+        </div>
+        <button id="button2" type="button" class="btn btn-primary"
+          onclick="javascript: resetActive(event, 20, 'step-2');" style="word-spacing: 4px;"><i
+            class="fas fa-chevron-left"></i> Previous </button>
+        <button id="button2" type="button" class="btn btn-primary"
+          onclick="javascript: resetActive(event, 60, 'step-4');" style="word-spacing: 4px;">Next <i
+            class="fas fa-chevron-right"></i> </button>
+      </div>
+      <div class="row setup-content step hiddenStepInfo" id="step-4">
+        <div class="col-xs-12">
+          <div class="col-md-12 well text-center">
+            <h1>STEP 4</h1>
+            <h3 class="underline">Instructions</h3>
+            Pay the application fee.
+            This can be done either by entering your card details, or by using Paypal.
+          </div>
+        </div>
+        <button id="button2" type="button" class="btn btn-primary"
+          onclick="javascript: resetActive(event, 40, 'step-3');" style="word-spacing: 4px;"> <i
+            class="fas fa-chevron-left"></i> Previous </button>
+        <button id="button2" type="button" class="btn btn-primary"
+          onclick="javascript: resetActive(event, 80, 'step-5');" style="word-spacing: 4px;">Next <i
+            class="fas fa-chevron-right"></i> </button>
+      </div>
+      <div class="row setup-content step hiddenStepInfo" id="step-5">
+        <div class="col-xs-12">
+          <div class="col-md-12 well text-center">
+            <h1>STEP 5</h1>
+            <h3 class="underline">Instructions</h3>
+            Upload the application.
+            This may require a confirmation email.
+          </div>
+        </div>
+        <button id="button2" type="button" class="btn btn-primary"
+          onclick="javascript: resetActive(event, 60, 'step-4');" style="word-spacing: 4px;"><i
+            class="fas fa-chevron-left"></i> Previous </button>
+        <button id="button2" type="button" class="btn btn-primary"
+          onclick="javascript: resetActive(event, 100, 'step-6');" style="word-spacing: 4px;">Next <i
+            class="fas fa-chevron-right"></i> </button>
+      </div>
+      <div class="row setup-content step hiddenStepInfo" id="step-6">
+        <div class="col-xs-12">
+          <div class="col-md-12 well text-center">
+            <h1>STEP 6</h1>
+            <h3 class="underline">Instructions</h3>
+            <p>Send us feedback on the overall process.
+              This step is not obligatory.</p>
+          </div>
+
+          <div class="container" style="position: relative;
                 overflow: hidden;
                 width: 100%;
-                padding-top: 56.25%;"><iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSfyxAV5O0_mUlur4UFl6hVXGXMm1X57XUoBOF7iBKbc_SvQbw/viewform?embedded=true" width="640" height="5000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+                padding-top: 56.25%;"><iframe class="responsive-iframe"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSfyxAV5O0_mUlur4UFl6hVXGXMm1X57XUoBOF7iBKbc_SvQbw/viewform?embedded=true"
+              width="640" height="5000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
 
-            
+
         </div>
-        <button  type="button" class="btn btn-primary" onclick="javascript: resetActive(event, 80, 'step-5');" style="word-spacing: 4px;"> <i class="fas fa-chevron-left"></i> Previous </button>
-            <button type="button" class="btn btn-success" id="Finish" style="word-spacing: 4px;">Finish <i class="fas fa-check-circle" ></i> </button>
-        
-    </div>
-<!-- Popup on page load -->
-    <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
+        <button type="button" class="btn btn-primary" onclick="javascript: resetActive(event, 80, 'step-5');"
+          style="word-spacing: 4px;"> <i class="fas fa-chevron-left"></i> Previous </button>
+        <button type="button" class="btn btn-success" id="Finish" style="word-spacing: 4px;">Finish <i
+            class="fas fa-check-circle"></i> </button>
+
+      </div>
+      <!-- Popup on page load -->
+      <!-- <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog"> -->
+      <!-- Modal content-->
+      <!-- <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h4 class="modal-title" style="text-align: center;">Welcome to our Site😊😊😊</h4>
             </div>
             <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                      <label for="sel1">Choose Your Scholarship Type</label>
-                      <select class="form-control" id="sel1">
-                          <option value="nothing" selected="selected">Select Your Scholarship</option>
-                        <option value="PostM.html">Post Matric</option>
-                        <option value="Minority.html">Minority</option>
-                        <option>Option 3</option>
-                        <option>Option 4</option>
-                      </select>
+              <form>
+                <div class="form-group">
+                  <label for="sel1">Choose Your Scholarship Type</label>
+                  <select class="form-control" id="sel1">
+                    <option value="nothing" selected="selected">Select Your Scholarship</option>
+                    <option value="PostM.html">Post Matric</option>
+                    <option value="Minority.html">Minority</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                  </select>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+
           </div>
-      
         </div>
-      </div>
-      
-</div>
-</div>
+
+      </div> -->
+    </div>
 
 
 
 
-<!-- <style>
+    <!-- <style>
 </style> -->
 
-<script type="text/javascript">
-    function resetActive(event, percent, step) {
+    <script type="text/javascript">
+      function resetActive(event, percent, step) {
         $(".progress-bar").css("width", percent + "%").attr("aria-valuenow", percent);
         $(".progress-completed").text(percent + "%");
 
         $("div").each(function () {
-            if ($(this).hasClass("activestep")) {
-                $(this).removeClass("activestep");
-            }
+          if ($(this).hasClass("activestep")) {
+            $(this).removeClass("activestep");
+          }
         });
 
         if (event.target.className == "col-md-2") {
-            $(event.target).addClass("activestep");
+          $(event.target).addClass("activestep");
         }
         else {
-            $(event.target.parentNode).addClass("activestep");
+          $(event.target.parentNode).addClass("activestep");
         }
 
         hideSteps();
         showCurrentStepInfo(step);
-    }
+      }
 
-    function hideSteps() {
+      function hideSteps() {
         $("div").each(function () {
-            if ($(this).hasClass("activeStepInfo")) {
-                $(this).removeClass("activeStepInfo");
-                $(this).addClass("hiddenStepInfo");
-            }
+          if ($(this).hasClass("activeStepInfo")) {
+            $(this).removeClass("activeStepInfo");
+            $(this).addClass("hiddenStepInfo");
+          }
         });
-    }
+      }
 
-    function showCurrentStepInfo(step) {        
+      function showCurrentStepInfo(step) {
         var id = "#" + step;
         $(id).addClass("activeStepInfo");
-    }
+      }
 
 
   //   $(window).load(function(){        
@@ -616,13 +701,13 @@ label {
     // $(document).ready(function(){
     // function alignModal(){
     //     var modalDialog = $(this).find(".modal-dialog");
-        
+
         // Applying the top margin on modal to align it vertically center
     //     modalDialog.css("margin-top", Math.max(0, ($(window).height() - modalDialog.height()) / 2));
     // }
     // Align modal when it is displayed
     // $(".modal").on("shown.bs.modal", alignModal);
-    
+
     // Align modal when user resize the window
 //     $(window).on("resize", function(){
 //         $(".modal:visible").each(alignModal);
@@ -631,55 +716,57 @@ label {
 
 
 
-</script>
+    </script>
 
-<!-- Steps Progress and Details - END -->
-<!-- progressbar 101 -->
-<div class="row">
-    <div class="progress" id="progress1">
-        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+    <!-- Steps Progress and Details - END -->
+    <!-- progressbar 101 -->
+    <div class="row">
+      <div class="progress" id="progress1">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+          aria-valuemax="100" style="width: 0%;">
         </div>
         <span class="progress-type">Overall Progress</span>
         <span class="progress-completed">0%</span>
+      </div>
     </div>
-</div>
 
-</div>
+  </div>
 
 </body>
-  </html>
 
-  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
+</html>
+
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js'></script>
 
 
-<script>$("#Finish").click(function() {
+<script>$("#Finish").click(function () {
     swal("Good Job", "Well Done, Now You Are Good To Go!", "success")
   });</script>
 
 
 <!--Add the following script at the bottom of the web page (before </body></html>)-->
-<script type="text/javascript">function add_chatinline(){var hccid=47437121;var nt=document.createElement("script");nt.async=true;nt.src="https://mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);}
-    add_chatinline();</script>
+<script type="text/javascript">function add_chatinline() { var hccid = 47437121; var nt = document.createElement("script"); nt.async = true; nt.src = "https://mylivechat.com/chatinline.aspx?hccid=" + hccid; var ct = document.getElementsByTagName("script")[0]; ct.parentNode.insertBefore(nt, ct); }
+  add_chatinline();</script>
 
-    <!-- button validation -->
+<!-- button validation -->
 
-    <script>
-       function myFunction() {
-  document.getElementById("myBtn").disabled = false;
-  
-}
+<script>
+  function myFunction() {
+    document.getElementById("myBtn").disabled = false;
 
-    </script>
+  }
 
-    <script>var checkBoxes = $('input.compulsory'),
-      submitButton = $('#continue');
-  
+</script>
+
+<script>var checkBoxes = $('input.compulsory'),
+    submitButton = $('#continue');
+
   checkBoxes.change(function () {
-      submitButton.attr("disabled", checkBoxes.is(":not(:checked)"));
-      if(checkBoxes.is(":not(:checked)")) {
-          submitButton.addClass('disabled');
-      } else {
-          submitButton.removeClass('disabled');
-      }       
+    submitButton.attr("disabled", checkBoxes.is(":not(:checked)"));
+    if (checkBoxes.is(":not(:checked)")) {
+      submitButton.addClass('disabled');
+    } else {
+      submitButton.removeClass('disabled');
+    }
   });</script>
